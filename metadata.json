@@ -1,0 +1,6 @@
+{
+  "name": "Future Samurai Experience",
+  "description": "An immersive 3D experience celebrating the history of the futuristic samurai warrior.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
