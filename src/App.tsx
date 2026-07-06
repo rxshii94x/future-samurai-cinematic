@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-
+import bgSamurai from "./assets/final.png";
 import { useState, useEffect } from 'react';
 import Preloader from './components/Preloader';
 import SectionOverlay from './components/SectionOverlay';
@@ -12,6 +12,7 @@ import ArchivistChromaKeyVideo from './components/ArchivistChromaKeyVideo';
 import WardenChromaKeyVideo from './components/WardenChromaKeyVideo';
 import CameraBreathing from './components/CameraBreathing';
 import AtmosphereSystem from './components/AtmosphereSystem';
+
 
 export default function App() {
   const [preloaderComplete, setPreloaderComplete] = useState(false);
@@ -102,7 +103,7 @@ export default function App() {
         id="samurai-concrete-bg"
         className="absolute inset-[-20px] bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{
-          backgroundImage: "url('/assets/bg-samurai.png2.png')",
+          backgroundImage: `url(${bgSamurai})`,
           zIndex: 0,
           transform: 'translate3d(var(--bg-drift-x, 0px), var(--bg-drift-y, 0px), 0) scale(var(--bg-drift-scale, 1.02))',
           willChange: 'transform',
@@ -114,7 +115,7 @@ export default function App() {
         id="samurai-splatter-bg"
         className="absolute inset-[-20px] bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{
-          backgroundImage: "url('/assets/bg-samurai.png2.png')",
+          backgroundImage: `url(${bgSamurai})`,
           zIndex: 1,
           filter: 'url(#red-only-mask)',
           transform: 'translate3d(var(--splatter-drift-x, 0px), var(--splatter-drift-y, 0px), 0) scale(var(--splatter-drift-scale, 1.02))',
